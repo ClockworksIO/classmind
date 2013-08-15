@@ -732,9 +732,9 @@ ul.menu li.act > a {
 }
 
 #footer a.act {
+    font-weight: bold;
     color: #3C60A4;
     border: none;
-    border-bottom: 1px solid #3C60A4;
 }
 
 #footer a.plain {
