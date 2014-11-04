@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,27 +10,23 @@
         <!-- CSS -->
         <link rel="stylesheet" href="/css/minimal.css" />
         
+        <!-- Device Mockups -->
+        <link rel="stylesheet" type="text/css" href="css/facade.css" />
+        
         <!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/jcu7slg.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+        <link rel="icon" type="image/png" href="/assets/logo_cut.png" />
         
         <title>Classmind - Informationsmangement für ihre Schule</title>
     </head>
     
     <body>
         <div class="web-doc">
-            <div id="header" class="doc-line">
-                <div class="unit-l fit-l" style="padding-top: 12px;">
-                    <a href="/"><h1 style="margin-left: -2px; line-height: 1em; font-weight: 600;">classmind.</h1></a>
-                    <h4>Wir nehmen Stress aus dem Schullaltag.</h4>
-                </div>
-                <div class="unit-r" style="padding-top: 12px;">
-                    <a href="mailto:contact@classmind.de" class="big-button">Kontakt</a>
-                </div>
-            </div>
+            
+            {% include header.html %}
             
             <div id="deck" class="doc-line">
                 <h1 class="tk-ff-enzo-web">Unterrichten ihre Lehrer lieber, anstatt vor einer unvorbereiteten Klasse zu sitzen?</h1>
@@ -39,7 +38,11 @@
             </div>
             
             <div id="copy" class="doc-line">
-                <center><img src="/assets/showcase/screen4_pro.png" alt="Classmind Dashboard" width="100%" height="auto" /></center>
+                <center>
+                    <div class="facade-minimal" data-url="starfleet-academy.classmind.de" style="padding: 56px 0 0 0;">
+                        <img src="assets/showcase/dashboard-teacher.png" width="100%" />
+                    </div>
+                </center>
                 
                 <div class="doc-line" style="margin-top: 54px;">
                     <div class="unit-l s1o1">
@@ -149,7 +152,7 @@
                             </li>
                             <li>
                                 <div class="unit-l fit-l pictos">h</div>
-                                <div class="unit-l unit-last">Supportgarantie: Hilfe innerhalb von maximal 12 Stunden.</div>
+                                <div class="unit-l unit-last">Supportgarantie: Hilfe jederzeit und so schnell wie möglich.</div>
                             </li>
                             <li>
                                 <div class="unit-l fit-l pictos">w</div>
@@ -164,20 +167,8 @@
                 </div>
             </div>
             
-            <div id="footer" class="doc-line">
-                <div class="unit-l fit-l">
-                    <a href="/" class="h4 plain">Classmind 2013 &copy;</a>
-                </div>
-                <div class="unit-l fit-l">
-                    <a href="/privacy.html" class="h4 plain">Datenschutz &amp; Sicherheit</a>
-                </div>
-                <div class="unit-l fit-l">
-                    <a href="/about.html" class="h4 plain">Über uns</a>
-                </div>
-                <div class="unit-l fit-l">
-                    <a href="/impressum.html" class="h4 plain">Impressum</a>
-                </div>
-            </div>
+            {% include footer.html %}
+            
         </div>
     </body>
 </html>
