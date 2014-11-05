@@ -685,29 +685,11 @@ ul.menu li.act > a {
     /**border-bottom: 1px solid #42a2e2;**/
 }
 
-.tabber > a {
-    display: block;
-    float: left;
-    margin: -1px 0 0 0;
-    min-width: 20%;
-    padding: 0 6px 12px 6px;
-    font-size: 14px;
-    text-align: center;
-    color: rgba(0,0,0,0.649);
-    
-    border-bottom: 3px solid transparent;
-}
 
-.tabber > a:hover, a.act {
-    text-decoration: none;
-    color: #13527C;
-    border-bottom: 3px solid #42a2e2;
-}
 
-.tabber > a.act {
-    color: #42a2e2;
-    font-weight: bold;
-}
+
+
+
 
 .separator {
     display: inline-block;
@@ -761,23 +743,11 @@ ul.menu li.act > a {
     margin-top: 18px;
 }
 
-.pager a {
-    display: block;
-    padding: 6px 10px;
-    color: #999;
-    font-weight: bold;
-    border: none;
-}
 
-.pager a:hover {
-    background-color: rgba(0,0,0,0.149);
-    color: #2d2d2d;
-}
 
-.pager a.act {
-    background-color: rgba(0,0,0,0.149);
-    color: #2d2d2d;
-}
+
+
+
 
 .onHover {
     visibility: hidden;
@@ -914,4 +884,16 @@ ul.menu li.act > a {
 
 .pl4 {
     padding-left: 36px;
+}
+
+.pt {
+    padding-top: 12px;
+}
+
+#header a {
+    color: #222;
+}
+
+#header a:hover {
+    color: #3C60A4;
 }
