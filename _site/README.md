@@ -1,4 +1,0 @@
-classmind.de
-================
-
-Product Website.
