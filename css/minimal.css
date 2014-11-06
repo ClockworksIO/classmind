@@ -285,7 +285,7 @@ img {
 }
 
 .rounded {
-    border-radius: 360px;
+    border-radius: 3px !important;
 }
 
 .thumb {
